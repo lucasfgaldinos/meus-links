@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #1e030a;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #c60029;
+    border-radius: 50px;
+    border: 2px solid #1e030a;
+}
+
+main {
+    width: 100%;
+    min-height: calc(100vh - 41px);
+    background: linear-gradient(259deg, #c60029 0%, #59081e 60%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+main .perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+main .perfil .foto-perfil {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+main .perfil .foto-perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #c60029;
+}
+
+main .perfil h1 {
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main .perfil p {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+}
+main .links {
+    margin-bottom: 30px;
+}
+
+main .links a div {
+    margin-bottom: 30px;
+}
+
+main .links a div {
+    width: 300px;
+    height: 60px;
+}
+
+main .links a div button {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #000000 0%, #d82626 51%, #000000 100%);
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 500;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background-size: 200% auto;
+    transition: 600ms;
+}
+
+main .links a div button.portfolio {
+    font-size: 14px;
+}
+
+main .links a div button:hover {
+    background-position: right center;
+    box-shadow: 0 0 10px #ffffff;
+    border: 1px solid #ffffff;
+}
+
+footer {
+    width: 100%;
+    background-color: #1e030a;
+    padding: 0 0 10px ;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
